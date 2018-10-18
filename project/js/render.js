@@ -206,7 +206,7 @@ function DrawTheTree(geom, x_init, y_init, z_init) {
 
 function setRules0() {
     rules.axiom = "F";
-    rules.mainRule = "F-F[-F+F[LLLLLLLL]]++F[+F[LLLLLLLL]]--F[+F[LLLLLLLL]]";
+    rules.mainRule = "F-F[-F+F[LLLLLLLL]]++FF[+F[LLLLLLLL]]--F[+F[LLLLLLLL]]";
     params.iterations = 3;
     params.angle = 0;
     params.theta = 30;
@@ -222,7 +222,6 @@ init();
 animate();
 
 function init() {
-
     renderer = new THREE.WebGLRenderer({
         antialias: true
     });
